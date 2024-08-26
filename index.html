@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Decodificador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <img src="Assets/Frame 6.svg" alt="Logo Alura" id="logoAlura"> -->
+
+    <main id="mainWrapper">
+      <img src="Assets/Frame 6.svg" alt="" height="40" />
+
+      <div id="itensCodificado">
+        <textarea
+          name=""
+          id="textoCodificado"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div id="botoesCodificado">
+          <div id="aviso">
+            <img src="Assets/bi_exclamation-circle-fill.svg" alt="exclamação" />
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div id="botoes">
+            <button class="botao criptografar" onclick="criptografarTexto()">
+              Criptografar
+            </button>
+            <button class="botao descriptografar" id="" onclick="descriptograrTexto()">Descriptografar</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="caixaMensagem">
+        <p id="textoDescriptografado"></p>
+
+        <div id="itens">
+          <img
+            src="Assets/High quality products 1 1.svg"
+            alt=""
+            id="imagemCaixaMensagem"
+          />
+
+          <div id="textos">
+            <strong>Nenhuma mensagem encontrada</strong>
+            <small
+              >Digite um texto que você deseja criptografar ou
+              descriptografar.</small
+            >
+          </div>
+        </div>
+
+        <button id="copiarBotao" class="botao botaoCopiar" onclick="copiarTexto()">
+          Copiar
+        </button>
+      </div>
+    </main>
+
+
+    <input type="text" id="inputHidden" hidden>
+    <script src="script.js"></script>
+  </body>
+</html>
